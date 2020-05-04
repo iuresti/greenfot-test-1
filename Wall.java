@@ -15,9 +15,9 @@ public class Wall extends Actor
     public void act() 
     {
          if(Greenfoot.isKeyDown("m")){
-             setLocation(getX(), getY() + 1);
+             setLocation(getX(), getY() + 2);
          } else if(Greenfoot.isKeyDown("k")){
-             setLocation(getX(), getY() - 1);
+             setLocation(getX(), getY() - 2);
          }
     }    
 }

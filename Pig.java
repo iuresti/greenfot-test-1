@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Pig extends Actor
 {
     private int xDirection = 1;
-    private int velocity = 4;
+    private int velocity = 5;
     private Actor wall;
     
     
