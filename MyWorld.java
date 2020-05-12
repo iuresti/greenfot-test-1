@@ -37,9 +37,15 @@ public class MyWorld extends World
 
         Pig pig3 = new Pig(wall);
         addObject(pig3,200,98);
-        pig3.setLocation(149,224);
-        pig.setLocation(284,341);
+        
+
+        Pig pig4 = new Pig(wall);
+        addObject(pig4,200,98);
+        
+        pig.setLocation(149,224);
+        pig2.setLocation(284,341);
         pig3.setLocation(190,223);
+        pig4.setLocation(190,300);
         
     }
 	
