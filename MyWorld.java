@@ -48,6 +48,6 @@ public class MyWorld extends World
 	}
 	
 	public void movePig(Pig pig, int x, int y){
-		addObject(pig, x, y);
+		pig.setLocation(x, y);
 	}
 }
