@@ -29,18 +29,13 @@ public class MyWorld extends World
         Wall wall = new Wall();
         addObject(wall,356,218);
 
-        Pig pig = new Pig(wall);
-        addObject(pig,78,336);
+        Pig pig = createPigAndAddToWorld(wall, 78, 336);
 
-        Pig pig2 = new Pig(wall);
-        addObject(pig2,85,98);
+        Pig pig2 = createPigAndAddToWorld(wall, 85, 98)
 
-        Pig pig3 = new Pig(wall);
-        addObject(pig3,200,98);
+        Pig pig3 = createPigAndAddToWorld(wall, 200, 98)
         
-
-        Pig pig4 = new Pig(wall);
-        addObject(pig4,200,98);
+        Pig pig4 = createPigAndAddToWorld(wall, 250, 25);
         
         pig.setLocation(149,224);
         pig2.setLocation(284,341);
@@ -56,4 +51,12 @@ public class MyWorld extends World
 	public void movePig(Pig pig, int x, int y){
 		pig.setLocation(x, y);
 	}
+
+    public Pig createPigAndAddToWorld(Wall wall, int x, int y){
+        Pig pig = new Pig(wall); 
+
+        addObject(pig, x, y);
+
+        return pig;
+    }
 }
