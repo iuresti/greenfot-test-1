@@ -46,4 +46,8 @@ public class MyWorld extends World
 	public Pig createPig(Wall wall){
 		return new Pig(wall);
 	}
+	
+	public void movePig(Pig pig, int x, int y){
+		addObject(pig, x, y);
+	}
 }
