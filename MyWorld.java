@@ -42,4 +42,8 @@ public class MyWorld extends World
         pig3.setLocation(190,223);
         
     }
+	
+	public Pig createPig(Wall wall){
+		return new Pig(wall);
+	}
 }
